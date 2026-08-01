@@ -1,4 +1,5 @@
 import Strands from './strands.jsx';
+import SplashCursor from './SplashCursor.jsx';
 
 export default function App() {
   return (
@@ -11,6 +12,9 @@ export default function App() {
         overflow: 'hidden',
       }}
     >
+      {/* Interactive Fluid Splash Cursor */}
+      <SplashCursor />
+
       {/* Background WebGL Animation */}
       <Strands
         colors={['#F97316', '#7C3AED', '#06B6D4']}
@@ -48,11 +52,11 @@ export default function App() {
       >
         <h1
           style={{
-            fontSize: 'clamp(2.5rem, 8vw, 5.5rem)',
-            fontWeight: 800,
-            letterSpacing: '-0.03em',
+            fontFamily: "'Lobster', cursive",
+            fontSize: 'clamp(3rem, 9vw, 6.5rem)',
+            fontWeight: 400,
+            letterSpacing: '0.02em',
             color: '#ffffff',
-            textTransform: 'uppercase',
             textShadow: '0 10px 30px rgba(0,0,0,0.9), 0 0 40px rgba(249,115,22,0.4)',
             lineHeight: 1.1,
             margin: 0,
@@ -70,7 +74,7 @@ export default function App() {
             margin: 0,
           }}
         >
-          Interactive WebGL Strands & Visual Effects
+          Interactive Strands by le J le 100% Bacon
         </p>
       </div>
     </div>
